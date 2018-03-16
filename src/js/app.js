@@ -116,3 +116,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 }, false);
+
+// Show and Hide the Go to top button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+  } else {
+      document.getElementById("myBtn").style.display = "none";
+  }
+}

@@ -16,8 +16,13 @@
   font-size: 60px;
   display: flex;
   flex-direction: row;
+  flex-basis: 0;
   flex-wrap: wrap;
   justify-content: space-between;
+  .tech{
+      min-width: calc(100%/3);
+  }
+
   p {
     font-size: 16px;
   }
@@ -26,6 +31,29 @@
     font-size: 75px;
   }
 }
+
+.supp{
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .exposure{
+      width:100%;
+  }
+  p{
+    font-size: 16px;
+  }
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+
+}
+
 
 .user-details {
   text-align: center;

@@ -3,11 +3,15 @@
   {% include head.html %}
   <body>
       {% include header.html %}
+      <i id="myBtn" class="icon fa fa-angle-up" href="#particles-js" data-scroll></i>
       <section id="about">
         {% include about.html %}
       </section>
       <section id="projects">
         {% include projects.html %}
+      </section>
+      <section id="others">
+        {% include others.html %}
       </section>
         {{ content }}
       {% include footer.html %}
