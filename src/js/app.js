@@ -127,3 +127,27 @@ function scrollFunction() {
       document.getElementById("myBtn").style.display = "none";
   }
 }
+
+// Modals popping up
+// Get the modal
+var modal = document.getElementById('my_cv');
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+function popCVModal(){
+  modal.style.visibility="visible";
+  modal.style.opacity=1;
+}
+
+span.onclick= function(){
+  modal.style.visibility="hidden";
+  modal.style.opacity=0;
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.visibility="hidden";
+        modal.style.opacity=0;
+    }
+}

@@ -42,8 +42,9 @@
     }
 }
 
-// Scroll to top
+// Scroll to top button
 #myBtn {
+    opacity: 0.8;
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */

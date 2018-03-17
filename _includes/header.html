@@ -1,4 +1,18 @@
 <div id="particles-js">
+  <!-- The Modal -->
+<div id="my_cv" class="cv_modal">
+<!-- Modal content -->
+<div class="modal-content">
+<span class="close">&times;</span>
+<h3 style="margin-top:0">My CV</h3>
+<p>Download my cv <a href="{{site.url}}/assets/pdf/Resume_LEUNG_Chun_Kit_Daniel.pdf">here</a> for better viewing experience.</p>
+<!-- <div class="cv_pdf"> -->
+  <object data="/assets/pdf/Resume_LEUNG_Chun_Kit_Daniel.pdf" type="application/pdf" width="100%" height="80%">
+   <p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
+</object>
+<!-- </div> -->
+</div>
+</div>
   <div class="header">
       <h1>
         <span class="site-title">{{site.username}}</span>
@@ -6,7 +20,8 @@
       </h1>
       <div class="header-icons">
         <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My CV" href="#"><i class="icon fa fa-address-book"></i></a>
+        <a onClick="popCVModal();" aria-label="My CV" href="#particles-js" data-scroll><i class="icon fa fa-address-book"></i></a>
+
         <!-- <a aria-label="My Twitter" target="_blank" href="#"><i class="icon fa fa-twitter" aria-hidden="true"></i></a> -->
         <!-- <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a> -->
         <a aria-label="My Github" target="_blank" href="#"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
